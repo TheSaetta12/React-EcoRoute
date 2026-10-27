@@ -1,0 +1,188 @@
+{
+  "shipments": [
+    {
+      "id": "1",
+      "code": "TRK-9082",
+      "driver": "Marco Rossi",
+      "status": "In consegna",
+      "vehicleId": "v1",
+      "distanceKm": 450
+    },
+    {
+      "id": "2",
+      "code": "TRK-3112",
+      "driver": "Sofia Bianchi",
+      "status": "Consegnato",
+      "vehicleId": "v3",
+      "distanceKm": 120
+    },
+    {
+      "id": "3",
+      "code": "TRK-5541",
+      "driver": "Andrea Verdi",
+      "status": "In Transito",
+      "vehicleId": "v2",
+      "distanceKm": 890
+    },
+    {
+      "id": "4",
+      "code": "TRK-7729",
+      "driver": "Paola Neri",
+      "status": "Consegnato",
+      "vehicleId": "v1",
+      "distanceKm": 95
+    },
+    {
+      "id": "5",
+      "code": "TRK-1044",
+      "driver": "Luigi Gialli",
+      "status": "In Transito",
+      "vehicleId": "v3",
+      "distanceKm": 610
+    }
+  ],
+  "vehicles": [
+    {
+      "id": "v1",
+      "type": "Furgone Elettrico",
+      "co2PerKm": 0
+    },
+    {
+      "id": "v2",
+      "type": "Treno Merci",
+      "co2PerKm": 0.02
+    },
+    {
+      "id": "v3",
+      "type": "Furgone Diesel Standard",
+      "co2PerKm": 0.18
+    }
+  ],
+  "logs": [
+    {
+      "id": "l1",
+      "shipmentId": "1",
+      "timestamp": "2026-06-16T08:30:00Z",
+      "message": "Merce presa in carico all'Hub di Milano"
+    },
+    {
+      "id": "l2",
+      "shipmentId": "1",
+      "timestamp": "2026-06-16T11:15:00Z",
+      "message": "In transito sull'Appennino - Ritardo stimato 15 min"
+    },
+    {
+      "id": "l3",
+      "shipmentId": "2",
+      "timestamp": "2026-06-15T14:00:00Z",
+      "message": "Consegna completata a domicilio"
+    },
+    {
+      "id": "l4",
+      "shipmentId": "3",
+      "timestamp": "2026-06-16T06:00:00Z",
+      "message": "Partito dallo scalo merci ferroviario"
+    },
+    {
+      "shipmentId": "1",
+      "timestamp": "2026-06-17T12:50:42.249Z",
+      "message": "Stato della spedizione modificato in: In consegna",
+      "id": "lKJOH-D"
+    },
+    {
+      "shipmentId": "1",
+      "timestamp": "2026-06-17T12:50:59.621Z",
+      "message": "In consegna presso la Destinazione designata.",
+      "id": "WbtbDof"
+    }
+  ],
+  "hubs": [
+    {
+      "id": "h1",
+      "name": "Hub Milano Centrale",
+      "capacityPercent": 85,
+      "status": "Operativo"
+    },
+    {
+      "id": "h2",
+      "name": "Hub Roma Sud",
+      "capacityPercent": 95,
+      "status": "Quasi Saturo"
+    },
+    {
+      "id": "h3",
+      "name": "Hub Bologna Scalo",
+      "capacityPercent": 40,
+      "status": "Operativo"
+    }
+  ],
+  "drivers": [
+    {
+      "id": "d1",
+      "fullName": "Alessandro Neri",
+      "birthDate": "1988-05-14",
+      "licenseType": "C",
+      "licenseExpiry": "2031-10-22",
+      "cqcHours": 140
+    },
+    {
+      "id": "d2",
+      "fullName": "Giulia Corti",
+      "birthDate": "1997-11-02",
+      "licenseType": "B",
+      "licenseExpiry": "2029-04-15",
+      "cqcHours": null
+    },
+    {
+      "fullName": "Pietro Saetta",
+      "birthDate": "",
+      "licenseType": "B",
+      "licenseExpiry": "2026-06-04",
+      "cqcHours": 150,
+      "id": "SttvDvU"
+    }
+  ],
+  "maintenances": [
+    {
+      "id": "m1",
+      "vehicleId": "v3",
+      "description": "Cambio olio filtri e pastiglie freni anteriori",
+      "components": [
+        {
+          "partName": "Filtro Olio",
+          "cost": 25
+        },
+        {
+          "partName": "Pastiglie Freni",
+          "cost": 75
+        },
+        {
+          "partName": "Olio Motore 5W30",
+          "cost": 60
+        }
+      ],
+      "totalEstimatedCost": 160,
+      "date": "2026-05-10"
+    },
+    {
+      "id": "m2",
+      "vehicleId": "v1",
+      "description": "Controllo diagnostico pacco batteria principale",
+      "components": [
+        {
+          "partName": "Liquido refrigerante batteria",
+          "cost": 45
+        }
+      ],
+      "totalEstimatedCost": 45,
+      "date": "2026-06-01"
+    },
+    {
+      "vehicleId": "v1",
+      "description": "Cambiare la batteria",
+      "date": "2026-06-19",
+      "totalEstimatedCost": 100,
+      "id": "E--EPDC"
+    }
+  ]
+}
